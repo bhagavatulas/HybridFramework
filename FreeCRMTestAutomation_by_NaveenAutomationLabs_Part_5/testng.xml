@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Free CRM Test Automation Suite">
+	<!-- <parameter name="appURL" value="http://www.automationpractice.com/"/> -->
+	<!-- <parameter name="browserType" value="chrome"/> -->
+	<listeners>
+		<listener
+			class-name="com.crm.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+	<test name="Free CRM App Test">
+		<classes>
+			<class name="com.crm.qa.testcases.LoginPageTest"></class>
+			<class name="com.crm.qa.testcases.HomePageTest"></class>
+			<class name="com.crm.qa.testcases.CalendarPageTest"></class>
+			<class name="com.crm.qa.testcases.CallsPageTest"></class>
+			<class name="com.crm.qa.testcases.CampaignsPageTest"></class>
+			<class name="com.crm.qa.testcases.CasesPageTest"></class>
+			<class name="com.crm.qa.testcases.CompaniesPageTest"></class>
+			<class name="com.crm.qa.testcases.ContactsPageTest"></class>
+			<class name="com.crm.qa.testcases.DealsPageTest"></class>
+			<class name="com.crm.qa.testcases.DocumentsPageTest"></class>
+			<class name="com.crm.qa.testcases.EmailPageTest"></class>
+			<class name="com.crm.qa.testcases.FormsPageTest"></class>
+			<class name="com.crm.qa.testcases.TasksPageTest"></class>
+		</classes>
+	</test>
+</suite>

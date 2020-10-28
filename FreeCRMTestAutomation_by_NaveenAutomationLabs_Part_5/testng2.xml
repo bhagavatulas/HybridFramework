@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Free CRM Test Automation Suite">
+	<!-- <parameter name="appURL" value="http://www.automationpractice.com/"/> -->
+	<!-- <parameter name="browserType" value="chrome"/> -->
+	<listeners>
+		<listener
+			class-name="com.crm.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+	<test name="Free CRM App Test">
+		<classes>
+			<class name="com.crm.qa.testcases.CallsPageTest"></class>
+		</classes>
+	</test>
+</suite>
