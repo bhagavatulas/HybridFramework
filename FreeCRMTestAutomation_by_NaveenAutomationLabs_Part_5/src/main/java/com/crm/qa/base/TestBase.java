@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.crm.qa.pages.commons.LeftNavBar;
@@ -64,8 +65,8 @@ public class TestBase {
 			System.setProperty
 				("webdriver.ie.driver", 
 				//"C:\\Users\\BlueHouse\\Documents\\selenium\\workspaces\\POM_PF_Cucumber_TestNG_New\\FreeCRMTestAutomation\\src\\main\\resources\\drivers\\IEDriverServer.exe");
-				filePath + "/src/main/resources/drivers/geckodriver.exe");
-			driver = new FirefoxDriver();
+				filePath + "/src/main/resources/drivers/IEDriverServer.exe");
+			driver = new InternetExplorerDriver();
 		}
 		
 		e_driver = new EventFiringWebDriver(driver);
